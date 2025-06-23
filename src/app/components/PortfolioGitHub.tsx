@@ -19,17 +19,12 @@ const PortfolioGitHub = () => {
         dragConstraints={constraintsRef}
         dragElastic={0.2}
         whileHover={{ scale: 1.05 }}
-        className="fixed top-5 right-5 z-[50] bg-transparent hover:bg-gray-500 text-white px-4 py-2 rounded-full shadow-lg shadow-amber-500 flex items-center justify-center gap-2 border-2 border-sky-700 cursor-pointer"
+        className="fixed top-5 right-5 z-[50] bg-black/30 md:hover:bg-gray-500 text-white px-4 py-2 rounded-full shadow-lg shadow-amber-500 flex items-center justify-center gap-2 border-2 border-sky-700 cursor-pointer"
+        onDoubleClick={() => window.open('https://github.com/beral10/portfolio.git', '_blank')}
       >
-        <a
-          href="https://github.com/beral10/portfolio.git"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2"
-        >
+        
           <FaGithub className="text-xl" />
-          <span>Ver código del portafolio</span>
-        </a>
+          <span>Código portafolio — 2 clicks</span>
       </motion.div>
     </>
   );
