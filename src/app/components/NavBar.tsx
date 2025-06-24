@@ -3,14 +3,15 @@ import { motion, Variants } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../assets/logotipo/logo_desktop.png';
+import logoMbile from '../assets/logotipo/logo_mobile.png';
 import { useState } from 'react';
 import { NavLink } from '../types/types';
 
 const links: NavLink[] = [
 	{
 		id: 1,
-		name: 'Sobre mí',
-		url: '/about',
+		name: 'Habilidades',
+		url: '/skills',
 	},
 	{
 		id: 2,
@@ -19,11 +20,6 @@ const links: NavLink[] = [
 	},
 	{
 		id: 3,
-		name: 'Habilidades',
-		url: '/skills',
-	},
-	{
-		id: 4,
 		name: 'Educación',
 		url: '/education',
 	},
@@ -43,7 +39,7 @@ const parentMobileVariants: Variants = {
 			when: 'afterChildren',
 			staggerChildren: 0.2,
 			staggerDirection: -1,
-			duration: 1.5,
+			duration: 0.8,
 		},
 	},
 };
@@ -88,9 +84,9 @@ const NavBar = () => {
 	const [activeLinkId, setActiveLinkId] = useState<number | null>(null);
 
 	return (
-		<div className={`bg-[#0b2a38] w-full mb-16 sm:mb-0`}>
+		<div className={`bg-[#0b2a38] mb-16 sm:mb-0`}>
 			{/* Nav en mobile */}
-			<motion.nav className='sm:hidden fixed top-0 left-0 w-full bg-[#0b2a38] z-50 overflow-hidden px-[20px] flex flex-col gap-64' variants={parentMobileVariants} initial='closed' animate={isMenuOpened ? 'opened' : 'closed'}>
+			<motion.nav className='sm:hidden fixed top-0 left-0 w-full bg-[#0b2a38] z-50 max-sm:px-10 flex flex-col gap-56' variants={parentMobileVariants} initial='closed' animate={isMenuOpened ? 'opened' : 'closed'}>
 				{/* Componente logo-menú */}
 				<div className='flex justify-between items-center z-40'>
 					{/* Logo */}
@@ -101,7 +97,7 @@ const NavBar = () => {
 								setIsMenuOpened(false);
 								setActiveLinkId(null);
 							}}>
-							<Image src={logo} alt='logo' width={200} height={80} priority />
+							<Image src={logoMbile} alt='logo' width={50} height={50} priority />
 						</Link>
 					</div>
 
@@ -124,7 +120,7 @@ const NavBar = () => {
 			</motion.nav>
 
 			{/* Nav en desktop */}
-			<nav className='hidden sm:flex max-w-[1500px] mx-auto px-[20px]'>
+			<nav className='hidden sm:flex max-w-[1500px] mx-auto px-[40px]'>
 				<Link href='/' onClick={() => setActiveLinkId(null)}>
 					<Image src={logo} alt='logo' width={200} height={80} priority />
 				</Link>

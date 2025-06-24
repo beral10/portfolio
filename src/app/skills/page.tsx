@@ -32,7 +32,7 @@ const skills = {
 const Skills = () => {
 	return (
 		<section className='flex justify-center items-center mx-auto max-w-[1500px] h-full shadow-black shadow-2xl px-[20px] bg-[#143c4e]'>
-			<div className='relative max-w-[1100px] w-full px-[20px] lg:px-[40px] text-white pt-10 md:pt-20 overflow-hidden'>
+			<div className='relative max-w-[1100px] w-full px-[20px] lg:px-[40px] text-white pt-10 md:pt-20'>
 				<div className='absolute top-4 -left-10 bg-green-700 w-56 h-56 opacity-30 blur-3xl rounded-full'></div>
 				<ImPacman className='absolute bottom-10 right-3 text-orange-400 w-30 h-30 rotate-y-180  blur-sm' />
 

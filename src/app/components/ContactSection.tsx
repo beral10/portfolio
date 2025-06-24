@@ -17,26 +17,25 @@ const socialLinks: SocialLink[] = [
 	},
 ];
 
-
 const ContactSection = () => {
-  return (
-    <div className='w-full flex flex-col items-center justify-center gap-2 sm:gap-10'>
-						<div className='flex justify-center items-center gap-8'>
-							{socialLinks.map((link) => (
-								<a key={link.name} href={link.src} aria-label={link.name} target='_blank'>
-									<link.icon className={`text-4xl mb-2 ${link.color}`} />
-								</a>
-							))}
-						</div>
-						<a href='mailto:yeferson.bernal@outlook.com' target='_blank' className='flex justify-center items-center gap-2 text-white'>
-							<PiMicrosoftOutlookLogo className='text-4xl mb-2 text-sky-600' />
-							yeferson.bernal@outlook.com
-						</a>
-						<a className='inline-block transition-all duration-300 ease-in-out w-full max-w-[400px] text-center bg-[#00dffc] text-[#ffffff] text-xl font-semibold py-3 px-6 rounded-xl shadow-md hover:shadow-lg hover:bg-white hover:text-[#00dffc]' href='/cv/cv-yeferson-bernal.pdf' download>
-							Descargar CV
-						</a>
-					</div>
-  )
-}
+	return (
+		<div className='w-full flex flex-col items-center justify-center gap-5 sm:gap-10'>
+			<div className='flex justify-center items-center gap-8'>
+				{socialLinks.map((link) => (
+					<a key={link.name} href={link.src} aria-label={link.name} target='_blank'>
+						<link.icon className={`text-4xl mb-2 ${link.color}`} />
+					</a>
+				))}
+			</div>
+			<a href='mailto:yeferson.bernal@outlook.com' target='_blank' className='flex justify-center items-center gap-2 text-white'>
+				<PiMicrosoftOutlookLogo className='text-4xl mb-2 text-sky-600' />
+				yeferson.bernal@outlook.com
+			</a>
+			<a className='inline-block transition-all duration-300 ease-in-out w-full max-w-[400px] text-center bg-[#00dffc] text-[#ffffff] text-xl font-semibold py-3 px-6 rounded-xl shadow-md hover:shadow-lg hover:bg-white hover:text-[#00dffc]' href='/cv/cv-yeferson-bernal.pdf' download>
+				Descargar CV
+			</a>
+		</div>
+	);
+};
 
-export default ContactSection
+export default ContactSection;

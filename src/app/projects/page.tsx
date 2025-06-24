@@ -4,8 +4,6 @@ import ProjectCard from '../components/ProjectCard';
 import PortfolioGitHub from '../components/PortfolioGitHub';
 
 const Projects = () => {
-	
-
 	return (
 		<section className='flex justify-center items-center mx-auto max-w-[1500px] h-full shadow-black shadow-2xl px-[20px] py-[50px] bg-[#143c4e]'>
 			<div className='w-full max-w-6xl mx-auto text-center'>
