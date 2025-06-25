@@ -1,4 +1,4 @@
-import { CustomButtonProps } from "../../types/types";
+import { CustomButtonProps } from "@/types/types";
 
 const CustomButton = ({onClick, showAll, showText = "Ver más", hideText = "Ver menos"}: CustomButtonProps) => {
   return (
