@@ -1,5 +1,5 @@
-import AboutMeComponent from '../components/AboutMeComponent';
-import HomeComponent from '../components/HomeComponent';
+import AboutMeComponent from "@/components/AboutMeComponent";
+import HomeComponent from "@/components/HomeComponent";
 
 export default function Home() {
 	return (

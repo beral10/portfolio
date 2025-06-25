@@ -1,10 +1,4 @@
-import { IconType } from 'react-icons';
-
-interface SkillCardProps {
-  name: string;
-  icon: IconType;
-  color?: string;
-}
+import { SkillCardProps } from "@/types/types";
 
 const SkillCard = ({name, icon: Icon, color = 'text-white'}: SkillCardProps) => {
   return (

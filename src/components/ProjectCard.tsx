@@ -1,7 +1,7 @@
 'use client'
 
+import { Project } from '@/types/types';
 import Image from 'next/image';
-import { Project } from '../types/types';
 import { FaGithub } from 'react-icons/fa6';
 
 type ProjectCardProps = {

@@ -1,5 +1,4 @@
-import React from 'react';
-import { EducationItem } from '../types/types';
+import { EducationItem } from '@/types/types';
 import { FaGraduationCap } from 'react-icons/fa6';
 
 type EducationCardProps = {

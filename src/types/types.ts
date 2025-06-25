@@ -1,6 +1,12 @@
 import { StaticImageData } from 'next/image';
 import { IconType } from 'react-icons';
 
+export type SkillCardProps = {
+  name: string;
+  icon: IconType;
+  color?: string;
+}
+
 export type SocialLink = {
 	name: string;
 	src: string;

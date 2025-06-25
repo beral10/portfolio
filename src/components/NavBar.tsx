@@ -5,7 +5,7 @@ import Link from 'next/link';
 import logo from '../assets/logotipo/logo_desktop.png';
 import logoMbile from '../assets/logotipo/logo_mobile.png';
 import { useState } from 'react';
-import { NavLink } from '../types/types';
+import { NavLink } from '@/types/types';
 import MenuNavbar from './ui/menuNavbar';
 
 const links: NavLink[] = [

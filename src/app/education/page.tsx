@@ -1,8 +1,9 @@
 //'use client'
 //import { useState } from 'react';
-import EducationCard from '../../components/EducationCard';
-import { educationData } from './education';
 //import CustomButton from '../utils/CustomButton';
+
+import EducationCard from "@/components/EducationCard";
+import { educationData } from "./education";
 
 const Education = () => {
   //const [showAll, setShowAll] = useState<boolean>(false);
