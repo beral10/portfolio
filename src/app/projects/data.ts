@@ -4,7 +4,7 @@ import event from "../../../public/projectPhotos/leadershipEvent.png";
 import tmdb from "../../../public/projectPhotos/tmdb.png";
 import todoList from "../../../public/projectPhotos/todoList.png";
 import vrPage from "../../../public/projectPhotos/vrPage.png";
-import { Project } from "../types/types";
+import { Project } from "../../types/types";
 
 export const myProjects: Project[] = [
   {

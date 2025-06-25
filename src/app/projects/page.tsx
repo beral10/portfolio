@@ -1,7 +1,7 @@
 'use client'
 import { myProjects } from './data';
-import ProjectCard from '../components/ProjectCard';
-import PortfolioGitHub from '../components/PortfolioGitHub';
+import ProjectCard from '../../components/ProjectCard';
+import PortfolioGitHub from '../../components/PortfolioGitHub';
 
 const Projects = () => {
 	return (

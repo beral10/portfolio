@@ -1,4 +1,4 @@
-import { EducationItem } from "../types/types";
+import { EducationItem } from "../../types/types";
 
 
 export const educationData: EducationItem[] = [

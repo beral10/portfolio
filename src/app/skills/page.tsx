@@ -3,7 +3,7 @@ import { BiLogoVisualStudio } from 'react-icons/bi';
 import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs, SiTypescript, SiJavascript, SiFigma } from 'react-icons/si';
 import { BsChatDots, BsPeople, BsLightbulb } from 'react-icons/bs';
-import SkillCard from '../components/SkillCard';
+import SkillCard from '../../components/SkillCard';
 import { ImPacman } from 'react-icons/im';
 
 const skills = {

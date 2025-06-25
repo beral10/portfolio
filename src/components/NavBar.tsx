@@ -6,6 +6,7 @@ import logo from '../assets/logotipo/logo_desktop.png';
 import logoMbile from '../assets/logotipo/logo_mobile.png';
 import { useState } from 'react';
 import { NavLink } from '../types/types';
+import MenuNavbar from './ui/menuNavbar';
 
 const links: NavLink[] = [
 	{
@@ -102,11 +103,7 @@ const NavBar = () => {
 					</div>
 
 					{/* Menú */}
-					<div className='flex flex-col gap-1.5 cursor-pointer group z-40' onClick={() => setIsMenuOpened((prev) => !prev)}>
-						<span className={`w-9 h-1 transform transition-all duration-600 ease-in-out ${isMenuOpened ? 'translate-y-1.5 rotate-45 bg-amber-500' : 'bg-gray-400'}`}></span>
-						<span className={`w-9 h-1 transform transition-all duration-600 ease-in-out ${isMenuOpened ? 'opacity-0' : 'bg-gray-400'}`}></span>
-						<span className={`w-9 h-1 transform transition-all duration-600 ease-in-out ${isMenuOpened ? '-translate-y-3.5 -rotate-45 bg-amber-500' : 'bg-gray-400'}`}></span>
-					</div>
+					<MenuNavbar isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
 				</div>
 				<motion.ul className={`flex flex-col items-center justify-center space-y-[30px]`} variants={ulMobileVariants} initial='closed' animate={isMenuOpened ? 'opened' : 'closed'}>
 					{links.map((link) => (
