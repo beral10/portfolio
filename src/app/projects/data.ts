@@ -13,7 +13,7 @@ export const myProjects: Project[] = [
     image: tmdb,
     description: 'Listado de películas populares, estrenos y mejor valoradas.',
     techStack: ['Next.js', 'TMDB API', 'Tailwindcss', 'useContext', 'Responsive Design'],
-    link: 'https://movies-tmdb-kappa.vercel.app/',
+    link: 'https://peliculas-tmdb.vercel.app/',
     github: 'https://github.com/beral10/search-movie-tmdb.git',
   },
   {
